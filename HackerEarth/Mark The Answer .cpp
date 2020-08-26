@@ -12,7 +12,7 @@ int main ()
     int skips = 0 ;
     int qsnc = 0 ;
 
-    for(int i = 0 ; i<n  ; i++)
+     for(int i = 0 ; i<n  ; i++)
     {
         cin>>arr[i];
     }
