@@ -23,23 +23,35 @@ int main()
             sum+=a[i] ; 
         }
         
+        bool flag = false ;
+
         int leftsum = 0 ; 
-        int rightsum = sum ; 
+
         
-         for(int i  = n ; i>=0 ; i--)
+         for(int i  = 0 ; i<n ; i++)
         {
             sum-=a[i] ; 
-            if(sum == leftsum)
+ 
+            if(sum == leftsum) 
             {
-                 cout<<i;
+                cout<<i+1<<endl;
+                flag = true;
+
             }
             
-            else if(sum > leftsum)
-            {
-                leftsum+=arr[n-i];
-                
-            }
+            leftsum+=a[i]; 
+
+        }       
+
+        if(flag == false)
+        {
+            cout<<"-1"<<endl ; 
         }
+
     }
-	return 0;
+
+    return 0;
+    
+
 }
+    
